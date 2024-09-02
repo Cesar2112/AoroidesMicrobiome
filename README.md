@@ -17,20 +17,20 @@ Our objective is to describe the *Agelas oroides* holobiont by describing their 
 
 
 ## Sampling and metadata associated to analysis
-A total of 6 specimens of *A. oroides* were collected in the Marseille region in two semi-dark underwater habitats, at depth between 15-20 m: “Tiboulen du Frioul” and “Grotte à Pérès”. Using a knife, sponges were totally detached from the substrate. Specimens were transported in plastic containers filled with sea water and placed in aquarium with running sea water for at least 24 h acclimation before manipulation. Aquaria temperature ranged from 15 to 20 °C with 38 ppm salinity. For all specimens, 3 fragments of about 1 cm3 were cut using a sterilized scalpel depending on the body part of the sponge: the first fragment identified as the external part, is the outer layer (about 1 mm depth) with a dark orange coloration. The second fragment identified as the internal part has a lighter orange color with a rough consistency and corresponds to ~ 98% of the total sponge volume. The last fragment is the entire sponge kept with both internal and external parts. 
+A total of 6 specimens of *A. oroides* were collected in the Marseille region in two semi-dark underwater habitats, at depth between 15-20 m: “Tiboulen du Frioul” and “Grotte à Pérès”. Using a knife, sponges were totally detached from the substrate. Specimens were transported in plastic containers filled with sea water and placed in aquarium with running sea water for at least 24 h acclimation before manipulation. Aquaria temperature ranged from 15 to 20 °C with 38 ppm salinity. For all specimens, 3 fragments of about 1 cm^3 were cut using a sterilized scalpel depending on the body part of the sponge: the first fragment identified as the external part, is the outer layer (about 1 mm depth) with a dark orange coloration. The second fragment identified as the internal part has a lighter orange color with a rough consistency and corresponds to ~ 98% of the total sponge volume. The last fragment is the entire sponge kept with both internal and external parts. 
 
 A traceability information sheet: [Sample Sheet](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/SampleSheet_AO.csv) was also completed and contained for each sponge samples: the date of harvest, its geographical localization, a sample code for identification and discrimination of the body parts being analyzed (external part, internal part and entire sponge).
 
 ![AoroidesInternalSchema](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/FIG1_Git.jpg)
 
 
-**Figure 2.** (A) *Agelas oroides in situ*. (B) Schematic representation of sampling: each specimen was subsampled depending on body parts: external part, internal part and the entire sponge. External and internal sections were used for cellular dissociation and enrichment (see Fig. 2), each fraction and/or entire sponge fragment was used for molecular and cytological analyses. Manipulation of samples were carried out at ~10 °C
+**Figure 2.** (A) *Agelas oroides in situ*. (B) Schematic representation of sampling: each specimen was subsampled depending on body parts: external part, internal part and the entire sponge. External and internal sections were used for cellular dissociation and enrichment (see Fig. 3), each fraction and/or entire sponge fragment was used for molecular and cytological analyses. Manipulation of samples were carried out at ~10 °C
 
 In adittion we conduct a sponge cells / extracellular Prokaryote enrichement following two centrifugation forces as explained in the following schema:
 
 ![Fig3](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/Fig2_V11_Git.jpg)
 
-**Figure 3.** Schema for the process dissociation and enrichement of eukariotic sponge cells(C1) and extracellular prokaryotes (C2) fractions.
+**Figure 3.** Protocol for the process dissociation and enrichement of eukariotic sponge cells (C1) and extracellular prokaryotes (C2) fractions.
 
 
 

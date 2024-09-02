@@ -33,11 +33,21 @@ In adittion we conduct a sponge cells / extracellular Prokaryote enrichement fol
 **Figure 3.** Protocol for the process dissociation and enrichement of eukariotic sponge cells (C1) and extracellular prokaryotes (C2) fractions.
 
 
+## Bioinformatic pipeline:
 
-References:
+### VTAM python based data pre-treatment
+[VTAM pre-treatment](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/Vtam_pipeline.md)
+
+### Statistical analysis conducted in R language
+
+[Statistical analysis](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/ScriptAoroidesMic.R)
+
+**References:**
 * Chu M-J, Li M, Ma H, Li P-L, Li G-Q (2022) Secondary metabolites from marine sponges of the genus Agelas : a comprehensive update insight on structural diversity and bioactivity. RSC Advances 12:7789–7820.
 * Hentschel U, Piel J, Degnan SM, Taylor MW (2012) Genomic insights into the marine sponge microbiome. Nat Rev Microbiol 10:641–654.
 * Zhang H, Dong M, Chen J, Wang H, Tenney K, Crews P (2017) Bioactive secondary metabolites from the marine sponge genus Agelas. Marine Drugs 15:351.
+* González A, Dubut V, Corse E, Mekdad R, Dechatre T, Castet U, Hebert R, Meglécz E (2023) VTAM: A robust pipeline for validating metabarcoding data using controls. Computational and Structural Biotechnology Journal 21:1151–1156.
+
 
 
 

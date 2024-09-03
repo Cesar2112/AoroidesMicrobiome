@@ -10,7 +10,7 @@
 The concept of sponge holobiont gathers the host animal, its associated microorganisms and the biological processed occurring between this entities. In fact, microrganism can constitute up to 35% of the total sponge biomass. 
 Our objective is to describe the *Agelas oroides* holobiont by describing their cytological components and the microorganism associated with this specie. In the present repository we present the bioinformatic pipeline used to describe the microbial community associated to the sponge *Agelas oroides*.
 
-![Agelas_img](https://github.com/Cesar2112/agelas-oroides-microbiome/blob/main/Aoro_git.JPG)
+![Agelas_img](https://github.com/Cesar2112/AoroidesMicrobiome/blob/main/Aoro_git.JPG)
 
 
 **Figure 1.** *A. oroides* is a Mediterranean sponge inhabiting coraligenous formations to mesophotic depths (10-120 m).

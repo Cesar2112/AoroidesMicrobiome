@@ -1,11 +1,6 @@
 # The holobiont *Agelas oroides*
 
 
-
-
-[![Sesam_img](https://www.imbe.fr/local/cache-vignettes/L400xH186/d46a112bebd61c35-0c5b6.png?1668533164)](https://sesam-anr.imbe.fr/)
-
-
 **Sponges** (phylum Porifera) are functionally important members of marine benthic communities. Having arisen some 600 million years ago, sponges are among the most ancient of all extant animal lineages, evolving in a sea of mircoorganism, potential pathogens and parasites. Sponges are well known to produce bioactive compounds. Since the beginning of the 1970s, many research groups around the world have carried out chemical investigation on *Agelas* spp., resulting in fruitful achievements. Their studies revealed that *Agelas* sponges harbor many bioactive secondary metabolites, including alkaloids (especially bromopyrrole derivatives), terpenoids, glycosphingolipids, carotenoids, fatty acids and meroterpenoids. This bioactive molecules, can be produced by the sponge itself, by their associated microorganism or by both.
 The concept of sponge holobiont gathers the host animal, its associated microorganisms and the biological processed occurring between this entities. In fact, microrganism can constitute up to 35% of the total sponge biomass. 
 Our objective is to describe the *Agelas oroides* holobiont by describing their cytological components and the microorganism associated with this specie. In the present repository we present the bioinformatic pipeline used to describe the microbial community associated to the sponge *Agelas oroides*.
@@ -47,6 +42,7 @@ In adittion we conduct a sponge cells / extracellular Prokaryote enrichement fol
 * Hentschel U, Piel J, Degnan SM, Taylor MW (2012) Genomic insights into the marine sponge microbiome. Nat Rev Microbiol 10:641–654.
 * Zhang H, Dong M, Chen J, Wang H, Tenney K, Crews P (2017) Bioactive secondary metabolites from the marine sponge genus Agelas. Marine Drugs 15:351.
 * González A, Dubut V, Corse E, Mekdad R, Dechatre T, Castet U, Hebert R, Meglécz E (2023) VTAM: A robust pipeline for validating metabarcoding data using controls. Computational and Structural Biotechnology Journal 21:1151–1156.
+* [SESAM - Sponge Exometabolites as Source of Antimicrobials](https://sesam-anr.imbe.fr/)
 
 
 

@@ -1,5 +1,6 @@
 ######## R packages needed ########
-# "phyloseq", "knitr", "xtable", "phangorn", "decipher", "microbiome", "microbiomeutilities", "eulerr", "ggplot2", "vegan","ampvis2"
+# "phyloseq", "knitr", "xtable", "phangorn", "decipher", "microbiome", "microbiomeutilities", "eulerr", "ggplot2", 
+# "vegan","ampvis2", "lme4", "lmerTest"
 
 ## Phyloseq:
 # ASV_Table
@@ -89,29 +90,61 @@ shapiro.test(Div_tabAO$PD)
 W = 0.60427, p-value = 0.002162"
 shapiro.test(Div_tabAO$Chao1)
 "data:  Div_tabAO$Chao1
-W = 0.9813, p-value = 0.49"    
+W = 0.9813, p-value = 0.49"    # Normal distributed
 shapiro.test(Div_tabAO$Shannon)
 "data:  Div_tabAO$Shannon
 W = 0.81979, p-value = 0.0001538"
 shapiro.test(Div_tabAO$Observed)
-"data:  Div_tabAO$Observed
+"data:  Div_tabAO$Observed     # Normal distributed
 W = 0.96821, p-value = 0.4915"
 shapiro.test(Div_tabAO$Simpson)
 "data:  Div_tabAO$Simpson
 W = 0.56354, p-value = 0.00000002695"
                                             
-Anova_AOFraction_ADivChao1 <- aov(Chao1 ~ Fraction, Div_tabAO) 
-summary(Anova_AOFraction_ADivChao1)
-          "  Df Sum Sq Mean Sq F value Pr(>F)  
-Fraction     2  252.3  126.15   2.623  0.091 .
-Residuals   27 1298.5   48.09  "
+Linear fixed models analysis:
+Random effects: Agelas oroides specimens 
+Fixed effects: Sponge body parts "SpoTissue" and Enriched fractions "Fractions"
+model = lmer(Chao1~SpoTissue + (1|spp), data=Div_tabAO) 
+"Linear mixed model fit by REML ['lmerMod']
+REML criterion at convergence: 181.1
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.48059 -0.54063 -0.08892  0.78904  1.30637 
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ spp      (Intercept) 23.39    4.836   
+ Residual             27.45    5.240   
+Number of obs: 30, groups:  spp, 6
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)   37.0000     2.4872  14.876
+SpoTissueGnl   6.6667     2.6199   2.545
+SpoTissueInt  -0.3333     2.1391  -0.156
+Correlation of Fixed Effects:
+            (Intr) SpTssG
+SpoTissuGnl -0.351       
+SpoTissuInt -0.430  0.408"
+#P-value with lmerTest package
+summary(lmer(Chao1 ~ SpoTissue + (1|spp), data = Div_tabAOb))
+"Fixed effects:
+		             Estimate Std. Error      df t value    Pr(>|t|)    
+		(Intercept)   37.0000     2.4872  8.1087  14.876 0.000000359 ***
+		SpoTissueGnl   6.6667     2.6199 22.0000   2.545      0.0185 *  
+		SpoTissueInt  -0.3333     2.1391 22.0000  -0.156      0.8776    
+		---
+		Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Anova_AOSpoTiss_ADivChao1 <- aov(Chao1 ~ SpoTissue, Div_tabAO) 
-summary(Anova_AOSpoTiss_ADivChao1)
-
-"            Df Sum Sq Mean Sq F value Pr(>F)
-SpoTissue    2  224.8  112.40   2.289  0.121
-Residuals   27 1326.0   49.11           "
+		Correlation of Fixed Effects:
+		            (Intr) SpTssG
+		SpoTissuGnl -0.351       
+		SpoTissuInt -0.430  0.408"
+anova(Model01,Model02)
+Models:
+Model01: Chao1 ~ SpoTissue + (1 | spp)
+Model02: Chao1 ~ SpoTissue + Fraction + (1 | spp)
+        npar    AIC    BIC  logLik deviance  Chisq Df Pr(>Chisq)
+Model01    5 201.29 208.30 -95.645   191.29                     
+Model02    6 202.14 210.55 -95.072   190.14 1.1461  1     0.2844                   
 
 #***** Beta Diversity*****
 # Body part example
@@ -152,15 +185,7 @@ pdpcoa_b <- plot_ordination(physeq16FIN, physeq.mds.dpcoa, color = "SpoTissue", 
   labs(col = "Sponge Tissue") +
   coord_fixed(sqrt(evals[2] / evals[1]))
 
-# Adonis statistical test
-AdoSpoTPhysq_MS<-adonis2(Esp_bray2 ~ SpoTissue, data = Esp_Braydf2, permutations = 999)
-AdoSpoTPhysq_MS
-"Number of permutations: 999
-adonis2(formula = Esp_bray2 ~ SpoTissue, data = Esp_Braydf2, permutations = 999)
-          Df SumOfSqs      R2      F Pr(>F)  
-SpoTissue  2  0.10461 0.14791 2.3435  0.038 *
-Residual  27  0.60264 0.85209                
-Total     29  0.70725 1.00000"
+#Permanova test with random models were conducted with Primer7
 
 # Barplots
 BPPhylaAgelas_MS <- plot_bar(physeq16FIN_AbRel, fill="Phylum") +

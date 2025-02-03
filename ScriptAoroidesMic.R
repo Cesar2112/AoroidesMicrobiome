@@ -138,6 +138,20 @@ summary(lmer(Chao1 ~ SpoTissue + (1|spp), data = Div_tabAOb))
 		            (Intr) SpTssG
 		SpoTissuGnl -0.351       
 		SpoTissuInt -0.430  0.408"
+					    
+summary(lmer(Chao1 ~ Fraction + (1|spp), data = Div_tabAOb))
+"Fixed effects:
+                 Estimate Std. Error     df t value    Pr(>|t|)    
+(Intercept)        35.750      2.475  7.959  14.447 0.000000542 ***
+FractionCellular    2.167      2.090 22.000   1.037     0.31111    
+FractionGeneral     7.917      2.560 22.000   3.093     0.00531 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) FrctnC
+FractnClllr -0.422       
+FractinGnrl -0.345  0.408"
 anova(Model01,Model02)
 Models:
 Model01: Chao1 ~ SpoTissue + (1 | spp)
